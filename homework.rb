@@ -114,7 +114,8 @@ eriks_numbers = users["Erik"][:favourite_numbers]
 p eriks_numbers
 
 # 4. Get the type of Avril's pet Colin
-p users["Avril"][:pets]["colin"]
+avrils_pet = users["Avril"][:pets]["colin"]
+p avrils_pet.to_s
 
 # 5. Get the smallest of Erik's favourite numbers
 smallest = eriks_numbers.sort![0]
@@ -125,7 +126,16 @@ eriks_numbers << 7
 p eriks_numbers
 
 # 7. Change Erik's hometown to Edinburgh
+eriks_hometown = users["Erik"][:hometown]
+eriks_hometown = "Edinburgh"
+p eriks_hometown
+
 # 8. Add a pet dog to Erik called "Fluffy"
+eriks_pets = users["Erik"][:pets]
+p eriks_pets
+eriks_pets["Fluffy"] = :dog
+p eriks_pets
+
 # 9. Add yourself to the users hash
 
 # C. Given the following data structure:
