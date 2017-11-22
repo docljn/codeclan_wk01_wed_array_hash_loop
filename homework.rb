@@ -170,6 +170,7 @@ united_kingdom = [
 ]
 
 
+
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
 united_kingdom[1][:capital] = "Cardiff"
 p united_kingdom
@@ -187,11 +188,18 @@ p united_kingdom
 united_kingdom.each do |country|
   p country[:name]
 end
-
 # OR
 for country in united_kingdom
   p country[:name]
 end
 
-
 # 4. Use a loop to find the total population of the UK.
+total_population = 0
+for country in united_kingdom
+  total_population += country[:population]
+end
+p total_population
+
+# confirming the amount:
+calc = 5295000 + 3063000 + 53010000 + 1811000
+p calc
