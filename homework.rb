@@ -64,6 +64,10 @@ p stops
 stops.reverse!
 
 # 10. Print out all the stops using a for loop
+for halt in stops
+  p halt
+end
+
 
 ## B. Given the following data structure:
 
