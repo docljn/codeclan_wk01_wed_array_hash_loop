@@ -40,7 +40,19 @@ p stops
 p stops.length
 
 # 8. How many ways can we return `"Falkirk High"` from the array?
+puts "1"
+p stops.slice(2)
+puts "2"
+result = stops.select { |stop| stop == "Falkirk High"}
+p result[0]
+puts "3"
+p stops[2]
+puts "4"
+p stops[-5]
+
 # 9. Reverse the positions of the stops in the array
+
+
 # 10. Print out all the stops using a for loop
 
 ## B. Given the following data structure:
