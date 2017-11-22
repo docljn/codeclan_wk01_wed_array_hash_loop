@@ -16,7 +16,18 @@ p stops
 
 
 # 3. Add `"Polmont"` at the appropriate point (between `"Falkirk High"` and `"Linlithgow"`)
+
+# # insert(index, obj...) → ary
+# # Inserts the given values before the element with the given index.
+stops.insert(stops.index("Linlithgow"), "Polmont")
+p stops
+
 # 4. Work out the index position of `"Linlithgow"`
+# index searches the array for the object starting at element 0 and working up, where rindex will start at the end of the array and work down searching for the object. They can both return the same result if the object you're searching for only exists in the array once. But if, however, it exists multiple times you'll get different indices when using index as it only returns the index first occurrence of the object you're searching for.
+index_number = stops.index("Linlithgow")
+p index_number
+
+
 # 5. Remove `"Livingston"` from the array using its name
 # 6. Delete `"Cumbernauld"` from the array by index
 # 7. How many stops there are in the array?
