@@ -138,6 +138,17 @@ p eriks_pets
 
 # 9. Add yourself to the users hash
 
+lorna = {
+  :twitter => "drljnoble",
+  :favourite_numbers => [19, 23, 7],
+  :home_town => "Edinburgh",
+  :pets => {
+    "john" => :husband
+  }
+}
+
+users["Lorna"] = lorna
+p users
 # C. Given the following data structure:
 
 
