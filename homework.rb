@@ -110,12 +110,15 @@ p users["Jonathan"][:twitter]
 p users["Erik"][:home_town]
 
 # 3. Get the array of Erik's favourite numbers
-p users["Erik"][:favourite_numbers]
+eriks_numbers = users["Erik"][:favourite_numbers]
+p eriks_numbers
 
 # 4. Get the type of Avril's pet Colin
 p users["Avril"][:pets]["colin"]
 
 # 5. Get the smallest of Erik's favourite numbers
+smallest = eriks_numbers.sort![0]
+p smallest 
 # 6. Add the number `7` to Erik's favourite numbers
 # 7. Change Erik's hometown to Edinburgh
 # 8. Add a pet dog to Erik called "Fluffy"
