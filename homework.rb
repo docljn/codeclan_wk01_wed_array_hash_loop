@@ -51,7 +51,17 @@ puts "4"
 p stops[-5]
 
 # 9. Reverse the positions of the stops in the array
-
+p stops.reverse!
+# OR you could pop off the end and push that into a new array, and repeat?
+stops_reversed = []
+while stops.length > 0
+  halt = stops.pop
+  stops_reversed << halt
+end
+stops = stops_reversed
+p stops
+# get back to the reversed array
+stops.reverse!
 
 # 10. Print out all the stops using a for loop
 
