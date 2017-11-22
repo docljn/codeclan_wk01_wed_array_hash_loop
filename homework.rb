@@ -118,8 +118,12 @@ p users["Avril"][:pets]["colin"]
 
 # 5. Get the smallest of Erik's favourite numbers
 smallest = eriks_numbers.sort![0]
-p smallest 
+p smallest
+
 # 6. Add the number `7` to Erik's favourite numbers
+eriks_numbers << 7
+p eriks_numbers
+
 # 7. Change Erik's hometown to Edinburgh
 # 8. Add a pet dog to Erik called "Fluffy"
 # 9. Add yourself to the users hash
