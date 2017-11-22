@@ -113,6 +113,8 @@ p users["Erik"][:home_town]
 p users["Erik"][:favourite_numbers]
 
 # 4. Get the type of Avril's pet Colin
+p users["Avril"][:pets]["colin"]
+
 # 5. Get the smallest of Erik's favourite numbers
 # 6. Add the number `7` to Erik's favourite numbers
 # 7. Change Erik's hometown to Edinburgh
